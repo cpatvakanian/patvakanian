@@ -8,39 +8,3 @@
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/typed.js" type='text/javascript'></script>
-
-<!-- Dark Mode Code -->
-<style>
-.dark-mode{
-    background-color: black !important;
-    color: white !important;
-  }
-</style>
- <script>
-    function toggleDarkMode() {
-        //body
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-        //cards
-        var elements = document.getElementsByClassName("w3-container");
-        var i;
-        for(i=0; i<elements.length; i++){
-            elements[i].classList.toggle("dark-mode");
-        }
-
-        //Nav bar
-        var nav = document.getElementsByClassName("w3-top");
-        nav[0].classList.toggle("dark-mode");
-
-        // all paragraphs [this section break so it should happen last]
-        var paragraphs = document.getElementsByTagName("P");
-        var j;
-        for(j=0; i<paragraphs.length; j++){
-            paragraphs[j].classList.toggle("dark-mode");
-        }
-
-        
-        
-       
-    }
-</script>
