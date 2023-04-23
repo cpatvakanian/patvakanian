@@ -87,12 +87,12 @@ layout: default
 
      
 
-    <!--Projects-->
-    <div id="Projects" style="display: none;" class="maincontent w3-animate-top">
+    <!--About-->
+    <div id="About" style="display: none;" class="maincontent w3-animate-top">
     <div style="margin-top: 30px;" class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-microchip fa-fw w3-margin-right w3-xxlarge w3-text-{{ page.color_scheme }}"></i>Projects</h2>
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-microchip fa-fw w3-margin-right w3-xxlarge w3-text-{{ page.color_scheme }}"></i>About</h2>
       
-      {% for project in site.data.projects %}
+      {% for project in site.data.about %}
       <div class="w3-container">
 
             <h5 style="float: left;" class="w3-opacity"><b>{{ project.title }}</b></h5>
@@ -105,7 +105,7 @@ layout: default
       </div>
       {% endfor %}
         
-    <!--End Projects-->
+    <!--End About-->
     </div>
     </div>
 
